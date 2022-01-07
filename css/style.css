@@ -1,6 +1,6 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 14pt;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-size: 14pt !important;
 }
 
 /* .container {
@@ -10,9 +10,9 @@ body {
     margin-left: auto;
 } */
 
-.clearfix {
+/* .clearfix {
     overflow: auto;
-}
+} */
 
 /* .row:before, .row:after {display: none !important;}
 .row:before, .row:after {width:0px; height:0px;} */
@@ -112,7 +112,7 @@ body {
 /* Footer */
 footer .main-footer {
     padding: 20px 0;  
-    background: #252525;
+    background: #003B6D;
 }
 
 footer ul {  
@@ -122,7 +122,7 @@ footer ul {
 
 /* Copy Right Footer */
 .footer-copyright { 
-    background: #222; 
+    background: #4b92dc; 
     padding: 5px 0;
 }
 
@@ -142,7 +142,7 @@ footer ul {
 }
 
 .footer-copyright nav ul li { 
-    border-left: 1px solid #505050; 
+    border-left: 1px solid #003B6D; 
     display: inline-block;  
     line-height: 12px;  
     margin: 0;  
@@ -159,16 +159,16 @@ footer ul {
 }
 
 .footer-copyright p { 
-    color: #969696; 
+    color: #fff; 
     margin: 2px 0 0;
 }
 
 /* Footer Top */
 .footer-top {  
-    background: #252525;  
+    background: #003B6D;  
     padding-bottom: 30px; 
     margin-bottom: 30px;  
-    border-bottom: 3px solid #222;
+    border-bottom: 3px solid #003B6D;
 }
 
 /* Footer transparent */
@@ -226,7 +226,7 @@ footer.light .footer-copyright {
 }
 
 .widget li a { 
-    color: #ff8d1e;
+    color: #fff;
 }
 
 .widget li a:hover { 
@@ -238,7 +238,7 @@ footer.light .footer-copyright {
 }
 
 .widget-title span {
-    background: #839FAD none repeat scroll 0 0;
+    background: #fff none repeat scroll 0 0;
     display: block; 
     height: 1px;
     margin-top: 25px;
@@ -292,7 +292,7 @@ ul.social-footer2 li {
 }
 
 ul.social-footer2 li a:hover {
-    background-color:#ff8d1e;
+    background-color:#fff;
 }
 
 ul.social-footer2 li a {
@@ -303,7 +303,7 @@ ul.social-footer2 li a {
 }
 
 .btn {
-    background-color: #ff8d1e; 
+    background-color: #4b92dc; 
     color:#fff;
 }
 
