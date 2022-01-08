@@ -98,13 +98,17 @@ body {
 /* sideNav */
 .navigationSecondary {
     display: inline-block;
-    height: 600px;
+    height: auto;
     width: 355px;
     position: absolute;
-    top: 750px;
+    top: 850px;
     left: 250px;
     background-color: #003B6D;
     color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px rgba(20,20,20,0.4);
+    padding: 20px !important;
+    overflow: auto;
 }
 
 .navigationSecondary a {
@@ -113,6 +117,18 @@ body {
 
 .navigationSecondary a::after {
     color: white;
+}
+
+.navigationSecondary ul {
+    margin-bottom: 30px;
+}
+
+.navigationSecondary h2 {
+    font-size: 1.5rem;
+}
+
+.navigationSecondary h3 {
+    font-size: 1rem;   
 }
 
 
