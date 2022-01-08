@@ -53,6 +53,10 @@ body {
     display: inline-block;
 }
 
+.container .imgHero {
+    margin-top: 170px;
+}
+
 /* Nav Section */
 
 .navigationMain {
@@ -93,9 +97,12 @@ body {
 /* Body */
 /* sideNav */
 .navigationSecondary {
-    display: block;
+    display: inline-block;
     height: 600px;
     width: 355px;
+    position: absolute;
+    top: 750px;
+    left: 250px;
     background-color: #003B6D;
     color: white;
 }
@@ -106,12 +113,6 @@ body {
 
 .navigationSecondary a::after {
     color: white;
-}
-
-#floatySidebar {
-    position:fixed;
-    top:250px;
-    left:100px;
 }
 
 
