@@ -108,6 +108,12 @@ body {
     color: white;
 }
 
+#floatySidebar {
+    position:fixed;
+    top:250px;
+    left:100px;
+}
+
 
 /* Footer */
 footer .main-footer {
