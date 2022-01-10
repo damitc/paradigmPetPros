@@ -453,4 +453,8 @@ ul.social-footer2 li a {
         width: 100%;
         background-size: contain;
     }
+    .navigationSecondary {
+        top: 810px;
+        left: 1%;
+    }
 }
