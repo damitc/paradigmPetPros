@@ -12,22 +12,14 @@ section {
     margin: 2rem auto;
 }
 
-#bodyShadow {
-    width: 1800px;
-    height: 100%;
-    position: static;
-    background-color: #4b92dc;
-    margin: auto
-}
-
 /* Header Section */
 .headerTop {
     width: 100%;
-    height: fit-content;
+    height: 100px;
     background-color: #fff;
     color: #000;
     position: relative;
-    padding: 15px;
+    padding: 7px;
     text-align: center;
 }
 
@@ -50,6 +42,7 @@ section {
     background-repeat: no-repeat;
     background-size: auto;
     z-index: 500;
+    margin-bottom: 6px;
 }
 
 /* Contact Button */
@@ -195,6 +188,22 @@ a:hover.active {
     overflow: auto;
 }
 
+/* Sidebar for the Testing page */
+#navigationSecondaryTestingPage {
+    display: inline-block;
+    height: auto;
+    width: 355px;
+    position: absolute;
+    top: 950px;
+    left: 20%;
+    background-color: #003b6d;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    padding: 20px !important;
+    overflow: auto;
+}
+
 .navigationSecondary a {
     color: #fff;
 }
@@ -226,13 +235,27 @@ a:hover.active {
 }
 
 /* Pexpert Section */
-/* #pexpertSection {
-    margin-top: 2rem;
-} */
-
 .pexpertText p {
     display: inline-block;
     max-width: 450px;
+}
+
+.pexpertCardButton {
+    background-color: #003b6d !important;
+    border: #003b6d !important;
+    color: #fff !important;
+}
+
+/* Adoption Section */
+.adoptionCards {
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+    border: none !important;
+}
+
+.adoptionCards .pexpertCardButton {
+    width: 100% !important;
 }
 
 /* Footer */
@@ -403,13 +426,16 @@ ul.social-footer2 li a {
     transition: all 250ms ease-in-out 0s;
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
     .container {
         width: 750px;
     }
+    .headerTop {
+        height: fit-content;
+    }
 }
 
-@media (min-width:992px) {
+@media (max-width:992px) {
     .container {
         width: 970px;
     }
