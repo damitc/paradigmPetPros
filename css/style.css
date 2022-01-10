@@ -441,8 +441,16 @@ ul.social-footer2 li a {
     }
 }
 
-@media (min-width:1200px) {
+@media (max-width:1200px) {
     .container {
         width: 1170px;
+    }
+}
+
+@media (max-width:1440px) {
+    .headerImage {
+        height: 452px;
+        width: 100%;
+        background-size: contain;
     }
 }
