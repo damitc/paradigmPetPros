@@ -23,11 +23,11 @@
                 <div class="col-lg-6 col-sm-12">
                     <div class="row d-flex">
                         <div class="col-sm-12">
-                            <div class="search"> <i class="fa fa-search"></i> <input type="text" class="form-control" placeholder="Type here to search.."> <button class="btn btn-primary">Search</button> </div>
+                            <div class="search"> <i class="fa fa-search"></i> <input type="text" class="form-control" placeholder="Type here to search.."> <button class="btn contactButton">Search</button> </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="contactFlex">
-                                <input type="button" class="btn btn-primary contactButton" value="Get in Touch!">
+                                <input type="button" class="btn contactButton" value="Get in Touch!">
                             </div>
                         </div>
                     </div>
@@ -230,46 +230,69 @@
                         <h1>Contact Us</h1>
                         <p>We are also happy to help you navigate the adoption process! We will guide you through each step in the process from determining which type of pet is best suited for your family and home environment, to completing the necessary paperwork, to bringing your new loved one home. </p>
                         <p>Please fill out our contact form to request a consultation. We will contact you within 48 hours to schedule a consultation.</p>
-                        <p>All Fields Are Required.</p>
+                        <p id="required">All Fields Are Required.</p>
                     </div>
                 </div>
             </div>
             <div class="container">
-                <form action="" method="get" class="formMain">
-                    <div class="humanSection">
-                        <h3>Personal Info</h3>
-                        <label for="name">Your Name</label>
-                        <input type="text" name="name" id="name" required>
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone" id="phone" required>
-                        <label for="email">Email</label>
-                        <input type="email" placeholder="example@email.com" name="email" id="email" required>
-                        <label for="zip">Zip Code</label>
-                        <input type="number" placeholder="90210" name="zip" id="zip" required>
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-9 col-sm-12">
+                        <form action="" method="get" class="formMain">
+                            <div class="mb-3" id="humanSection">
+                                <h3>Person Info</h3>
+                            </div>
+                            <div class="mb-3">
+                                <label for="name">Your Name</label>
+                                <input type="text" name="name" id="name" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" name="phone" id="phone" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="example@email.com" name="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="zip">Zip Code</label>
+                                <input type="number" placeholder="90210" name="zip" id="zip" class="form-control" required>
+                            </div>
+                            <div id="petSection">
+                                <div class="mb-3">
+                                    <h3>Pet Info</h3>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="petName">Pet's Name</label>
+                                    <input type="text" name="petName" id="petName" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="petAge">Pet's Age</label>
+                                    <input type="number" name="petAge" id="petAge" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <h3>What Kind of Animal Is Your Pet?</h3>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="petType">Pet Type</label>
+                                    <select name="petType" id="petType" class="form-control" required>
+                                        <option value="" disabled selected>Select your option</option>
+                                        <option value="cat">Cat</option>
+                                        <option value="dog">Dog</option>
+                                        <option value="bird">Bird</option>
+                                        <option value="freshwaterFish">Freshwater Fish</option>
+                                        <option value="saltwaterFish">Saltwater Fish</option>
+                                        <option value="reptile">Reptile</option>
+                                        <option value="amphibian">Amphibian</option>
+                                        <option value="smallAnimal">Other Small Animal</option>
+                                        <option value="largeAnimal">Other Large Animal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn pexpertCardButton">Submit</button>
+                        </form>
                     </div>
-                    <div class="petSection">
-                        <h3>Pet Info</h3>
-                        <label for="petName">Pet's Name</label>
-                        <input type="text" name="petName" id="petName" required>
-                        <label for="petAge">Pet's Age</label>
-                        <input type="number" name="petAge" id="petAge" required>
-                        <h3>What Kind of Animal Is Your Pet?</h3>
-                        <label for="petType">Pet Type</label>
-                        <select name="petType" id="petType" required>
-                            <option value="" disabled selected>Select your option</option>
-                            <option value="cat">Cat</option>
-                            <option value="dog">Dog</option>
-                            <option value="bird">Bird</option>
-                            <option value="freshwaterFish">Freshwater Fish</option>
-                            <option value="saltwaterFish">Saltwater Fish</option>
-                            <option value="reptile">Reptile</option>
-                            <option value="amphibian">Amphibian</option>
-                        </select>
-                    </div>
-                    <div class="formSubmit">
-                        <input type="submit" value="Submit!">
-                    </div>
-                </form>
+                </div>
             </div>
         </section>
     </main> 

@@ -49,11 +49,13 @@ section {
 .contactButton {
     background-color: #003b6d !important;
     border-color: #003b6d !important;
+    color: #fff !important;
 }
 
-.contactButton:hover {
+.contactButton:active {
     background-color: #4b92dc !important;
     border-color: #4b92dc !important;
+    color: #fff !important;
 }
 
 .container .imgHero {
@@ -105,19 +107,9 @@ section {
     text-align: center;
 }
 
-.search button:hover {
+.search button:active {
     background-color: #4b92dc;
     border-color: #4b92dc;
-}
-
-.search button:active {
-    background-color: #003b6d;
-    border-color: #003b6d;
-}
-
-.search button:focus {
-    background-color: #003b6d;
-    border-color: #003b6d;
 }
 
 /* Navbar */
@@ -246,6 +238,11 @@ a:hover.active {
     color: #fff !important;
 }
 
+.pexpertCardButton:active {
+    background-color: #4b92dc !important;
+    border: #4b92dc !important;
+}
+
 /* Adoption Section */
 .adoptionCards {
     width: fit-content;
@@ -256,6 +253,12 @@ a:hover.active {
 
 .adoptionCards .pexpertCardButton {
     width: 100% !important;
+}
+
+/* Contact Section */
+#required {
+    color: red;
+    font-weight: 700;
 }
 
 /* Footer */
