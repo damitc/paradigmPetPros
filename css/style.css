@@ -269,6 +269,12 @@ a:hover.active {
     width: 100% !important;
 }
 
+#hrCardLine {
+    width: 75%;
+    margin: auto;
+    border-top: 2px solid #4b92dc;
+}
+
 /* Contact Section */
 #required {
     color: red;
@@ -334,6 +340,17 @@ footer ul {
 .footer-copyright nav ul li:first-child {
     border: medium none;
     padding-left: 0;
+}
+
+.footerButton {
+    background-color: #4b92dc !important;
+    border-color: #4b92dc !important;
+    color: white !important;
+}
+
+.footerButton:focus {
+    background-color: #003b6d !important;
+    border: 1px solid #4b92dc !important;
 }
 
 .footer-copyright p {
@@ -456,12 +473,31 @@ ul.social-footer2 li a {
     transition: all 250ms ease-in-out 0s;
 }
 
+@media (max-width: 500px) {
+    #cardRow {
+        margin: auto;
+    }
+    .adoptionCards {
+        width: 300px;
+        margin: 15px auto;
+    }
+}
+
 @media (max-width:768px) {
     .container {
         width: 750px;
     }
     .headerTop {
         height: fit-content;
+    }
+    #cardRow {
+        margin: auto;
+    }
+    #cardRow .card {
+        margin: 5px auto;
+    }
+    #hrCardLine {
+        display: block !important;
     }
 }
 
@@ -489,5 +525,8 @@ ul.social-footer2 li a {
     .navigationSecondary {
         top: 810px;
         left: 1%;
+    }
+    #hrCardLine {
+        display: none;
     }
 }

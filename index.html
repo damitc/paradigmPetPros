@@ -136,8 +136,8 @@
                 <div class="row">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-9 col-sm-12">
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-12">
+                        <div class="row" id="cardRow">
+                            <div class="col-lg-6 col-xs-6">
                                 <div class="card" style="width: 18rem;">
                                     <img src="/img/homePage/ipadWatch.jpg" class="card-img-top" alt="Individual Consultations">
                                     <div class="card-body">
@@ -147,11 +147,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-12">
+                            <div class="col-lg-6 col-xs-6">
                                 <div class="card" style="width: 18rem;">
                                     <img src="/img/homePage/conferenceRoom.jpg" class="card-img-top" alt="Group Consultations">
                                         <div class="card-body">
-                                        <h5 class="card-title">Group Consultation</h5>
+                                        <h5 class="card-title">Group Presentation</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         <a href="#" class="btn pexpertCardButton">Get A Quote</a>
                                     </div>
@@ -184,6 +184,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <hr id="hrCardLine">
                             <div class="col-lg-2">
                                 <div class="card adoptionCards">
                                     <img src="/img/icons/aspcaLogo.svg" class="card-img-top" alt="ASPCA">
@@ -192,6 +193,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <hr id="hrCardLine">
                             <div class="col-lg-2">
                                 <div class="card adoptionCards">
                                     <img src="/img/icons/shelterProjectLogoInverse.png" class="card-img-top" alt="General Adoption Resources">
@@ -200,6 +202,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <hr id="hrCardLine">
                             <div class="col-lg-2">
                                 <div class="card adoptionCards">
                                     <img src="/img/icons/stsLogo.jpg" class="card-img-top" alt="Snake Rescue">
@@ -208,6 +211,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <hr id="hrCardLine">
                             <div class="col-lg-2">
                                 <div class="card adoptionCards">
                                     <img src="/img/icons/ftlobLogo.jpg" class="card-img-top" alt="Bird Rescue">
@@ -238,7 +242,7 @@
                 <div class="row">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-9 col-sm-12">
-                        <form action="" method="get" class="formMain row">
+                        <form class="formMain row" onsubmit="openModal();return false" id="pexpertForm">
                             <div class="mb-3 col-md-12" id="humanSection">
                                 <h3>Person Info</h3>
                             </div>
@@ -287,8 +291,26 @@
                                     <option value="largeAnimal">Other Large Animal</option>
                                 </select>
                             </div>
-                            <button type="submit" class="btn pexpertCardButton">Submit</button>
+                            <button type="submit" class="btn pexpertCardButton" data-bs-toggle="modal" data-bs-target="#modalSubmitSuccess">Submit</button>
                         </form>
+                        <div class="modal fade" id="modalSubmitSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Thank You!</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Our Pexperts will contact you in the next 48 hours</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -320,7 +342,7 @@
                         <div class="widget no-box">
                             <h5 class="widget-title">Get Started<span></span></h5>
                             <p>Connect with our Pexperts!</p>
-                            <a class="btn" href="#" target="_blank">Connect Now</a>
+                            <a class="btn footerButton" href="#" target="_blank">Connect Now</a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3">
@@ -348,7 +370,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
