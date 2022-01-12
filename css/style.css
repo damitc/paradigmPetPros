@@ -271,7 +271,7 @@ a:hover.active {
 
 .adoptionCards {
     width: fit-content;
-    /* margin: auto; */
+    margin: auto;
     padding: 5px;
     border: none !important;
 }
