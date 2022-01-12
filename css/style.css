@@ -6,6 +6,7 @@ body {
 
 p {
     line-height: 2;
+    text-align: justify;
 }
 
 section {
@@ -227,8 +228,8 @@ a:hover.active {
 /* ---------- Body Section ---------- */
 /* General Body */
 .paragraphHeadingGutter {
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
 }
 
 /* About Section */
@@ -239,11 +240,12 @@ a:hover.active {
 /* Pexpert Section */
 .pexpertText p {
     display: inline-block;
-    max-width: 450px;
+    max-width: 415px;
+    margin-top: .5rem !important;
 }
 
 #pg1 {
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 .pexpertCardButton {
@@ -257,8 +259,12 @@ a:hover.active {
     border: #4b92dc !important;
 }
 
+#cardRow .card {
+    margin: auto;
+}
+
 /* ---------- Adoption Section ---------- */
-#flexLinks {
+.flexCards {
     display: flex;
     align-items: flex-end;
 }
@@ -415,6 +421,18 @@ footer.light .footer-copyright {
     margin-top: 25px;
     position: relative;
     width: 20%;
+}
+
+.darkBlue span {
+    background: #003b6d none repeat scroll 0 0;
+    height: 2px;
+    width: 10%;
+}
+
+.lightBlue span {
+    background: #4b92dc none repeat scroll 0 0;
+    height: 2px;
+    width: 10%;
 }
 
 .widget-title span::after {
