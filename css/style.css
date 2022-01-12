@@ -184,32 +184,13 @@ a:hover.active {
     overflow: auto;
 }
 
-/* Sidebar for the Testing page */
-#navigationSecondaryTestingPage {
-    display: inline-block;
-    height: auto;
-    width: 355px;
-    position: absolute;
-    top: 950px;
-    left: 20%;
-    background-color: #003b6d;
-    color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-    padding: 20px !important;
-    overflow: auto;
-}
-
-.navigationSecondary a {
+.navigationSecondary a,
+.navigationSecondary a:after {
     color: #fff;
 }
 
 .navigationSecondary a:hover {
     color: #4b92dc;
-}
-
-.navigationSecondary a:after {
-    color: #fff;
 }
 
 .navigationSecondary ul {
@@ -221,6 +202,46 @@ a:hover.active {
 }
 
 .navigationSecondary h3 {
+    font-size: 1rem;
+}
+
+/* Sidebar for the Testing page */
+#navigationSecondaryTestingPage {
+    display: inline-block;
+    height: auto;
+    width: 300px;
+    /* position: absolute; */
+    /* top: 850px; */
+    /* left: 20%; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 500px;
+    background-color: #003b6d;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    padding: 20px !important;
+    overflow: auto;
+}
+ 
+#navigationSecondaryTestingPage a, 
+#navigationSecondaryTestingPage a::after {
+    color: #fff;
+}
+
+#navigationSecondaryTestingPage a:hover {
+    color: #4b92dc;
+}
+
+#navigationSecondaryTestingPage ul {
+    margin-bottom: 30px;
+}
+
+#navigationSecondaryTestingPage h2 {
+    font-size: 1.5rem;
+}
+
+#navigationSecondaryTestingPage h3 {
     font-size: 1rem;
 }
 
