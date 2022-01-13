@@ -16,6 +16,10 @@ section {
     color: white !important;
 }
 
+.row  .row {
+    margin: 0px -15px !important;
+}
+
 /* ---------- Header Section ---------- */
 .headerTop {
     width: 100%;
@@ -46,7 +50,7 @@ section {
     background-repeat: no-repeat;
     background-size: auto;
     z-index: 500;
-    margin-bottom: 6px auto;
+    margin: 6px auto;
 }
 
 /* Contact Button */
@@ -207,25 +211,23 @@ a:hover.active {
 
 /* Sidebar for the Testing page */
 #navigationSecondaryTestingPage {
-    display: inline-block;
-    height: auto;
+    height: 575px;
     width: 300px;
-    /* position: absolute; */
-    /* top: 850px; */
-    /* left: 20%; */
-    position: -webkit-sticky;
-    position: sticky;
-    top: 500px;
+    margin-left: auto !important;
+    margin-right: 0 !important;
     background-color: #003b6d;
     color: #fff;
     border-radius: 15px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
     padding: 20px !important;
-    overflow: auto;
 }
- 
+
+#sideNavPadding {
+    width: fit-content;
+}
+
 #navigationSecondaryTestingPage a, 
-#navigationSecondaryTestingPage a::after {
+#navigationSecondaryTestingPage a:after {
     color: #fff;
 }
 
@@ -250,11 +252,21 @@ a:hover.active {
 .paragraphHeadingGutter {
     margin-top: 1.5rem !important;
     margin-bottom: 1rem !important;
+    display: inline-block !important;
 }
 
 /* About Section */
 #aboutSection {
     margin-top: 5rem;
+}
+
+.row #aboutImage {
+    display: flex;
+    align-items: flex-start !important;
+}
+
+#aboutImage {
+    max-width: 275px;
 }
 
 /* Pexpert Section */
@@ -290,14 +302,13 @@ a:hover.active {
 }
 
 .adoptionCards {
-    width: fit-content;
-    margin: auto;
-    padding: 5px;
+    width: fit-content !important;
+    margin: auto !important;
     border: none !important;
 }
 
 .adoptionCards .pexpertCardButton {
-    width: 100% !important;
+    width: fit-content !important;
 }
 
 .hrCardLine {
@@ -335,6 +346,10 @@ footer .main-footer {
 footer ul {
     padding-left: 0;
     list-style: none;
+}
+
+#footerLogo {
+    border-radius: 5px;
 }
 
 .footer-copyright {
@@ -523,12 +538,24 @@ ul.social-footer2 li a {
     .navigationSecondary {
         display: none;
     }
+    #navigationSecondaryTestingPage {
+        display: none;
+    }
     #cardRow {
         margin: auto;
     }
     .adoptionCards {
         width: 300px;
         margin: 15px auto;
+    }
+    .hrCardLine {
+        display: block !important;
+    }
+    .row  .row {
+        margin: 0px !important;
+    }
+    .headerTop {
+        height: fit-content;
     }
 }
 
@@ -542,6 +569,9 @@ ul.social-footer2 li a {
     .navigationSecondary {
         display: none;
     }
+    #navigationSecondaryTestingPage {
+        display: none;
+    }
     #cardRow {
         margin: auto;
     }
@@ -551,6 +581,12 @@ ul.social-footer2 li a {
     .hrCardLine {
         display: block !important;
     }
+    .row  .row {
+        margin: 0px !important;
+    }
+    .headerTop {
+        height: fit-content;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -559,6 +595,18 @@ ul.social-footer2 li a {
     }
     .navigationSecondary {
         display: none;
+    }
+    #navigationSecondaryTestingPage {
+        display: none;
+    }
+    .hrCardLine {
+        display: block !important;
+    }
+    .row  .row {
+        margin: 0px !important;
+    }
+    .headerTop {
+        height: fit-content;
     }
 }
 
@@ -570,21 +618,25 @@ ul.social-footer2 li a {
         display: flex;
         align-items: flex-end;
     }
+    .navigationSecondary {
+        display: none;
+    }
+    #navigationSecondaryTestingPage {
+        display: none;
+    }
 }
 
-@media (min-width: 1201px) and (max-width: 1350px) {
-
-}
-
-@media (min-width: 1351px) and (max-width: 1440px) {
+@media (min-width: 1201px) and (max-width: 1400px) {
     .headerImage {
         height: 452px;
         width: 100%;
         background-size: contain;
     }
     .navigationSecondary {
-        top: 810px;
-        left: 1%;
+        display: none;
+    }
+    #navigationSecondaryTestingPage {
+        display: none;
     }
 }
 
