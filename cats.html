@@ -7,34 +7,65 @@
     <title>Paradigm Pet Professionals</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 
 <body>
     <header>
-        <div class="container headerTop">
-            <div class="logoFlex">
-                <a href="index.html"><img src="img/logo/logoFull.jpg" alt="Paradigm Pet Professionals" id="mainLogo"></a>
-            </div>
-            <div class="searchFlex">
-                <form class="searchBar">
-                    <input type="text" class="headerSearch" placeholder="Search..">
-                    <button>Go</button>
-                </form>
-            </div>
-            <div class="contactFlex">
-                <input type="button" class="contactButton" value="Get in Touch!">
+        <div class="container">
+            <div class="headerTop row">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="logoFlex">
+                        <a href="index.html"><img src="img/logo/logoFull.jpg" alt="Paradigm Pet Professionals" id="mainLogo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="row d-flex">
+                        <div class="col-sm-12">
+                            <div class="search"> <i class="fa fa-search"></i> <input type="text" class="form-control" placeholder="Type here to search.."> <button class="btn contactButton">Search</button> </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="contactFlex">
+                                <input type="button" class="btn contactButton" value="Get in Touch!">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <nav class="navigationMain">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="cats.html">Cat Owners</a></li>
-                <li><a href="dogs.html">Dog Owners</a></li>
-                <li><a href="fish.html">Fish Owners</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navigationMain">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="cats.html">Cat Owners</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="dogs.html">Dog Owners</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="fish.html">Fish Owners</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <div class="container">
-            <div class="imgHero"></div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="imgHero">
+                        <img src="/img/homePage/header.svg" alt="Paradigm Pet Professionals" height="652px" width="1489px" class="img-fluid">
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
