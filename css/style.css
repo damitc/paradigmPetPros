@@ -544,6 +544,9 @@ ul.social-footer2 li a {
     #cardRow {
         margin: auto;
     }
+    #cardRow .card {
+        margin: 5px auto;
+    }
     .adoptionCards {
         width: 300px;
         margin: 15px auto;
@@ -599,6 +602,12 @@ ul.social-footer2 li a {
     #navigationSecondaryTestingPage {
         display: none;
     }
+    #cardRow {
+        margin: auto;
+    }
+    #cardRow .card {
+        margin: 5px auto;
+    }
     .hrCardLine {
         display: block !important;
     }
@@ -624,6 +633,12 @@ ul.social-footer2 li a {
     #navigationSecondaryTestingPage {
         display: none;
     }
+    #cardRow {
+        margin: auto;
+    }
+    #cardRow .card {
+        margin: 5px auto;
+    }
 }
 
 @media (min-width: 1201px) and (max-width: 1400px) {
@@ -637,6 +652,12 @@ ul.social-footer2 li a {
     }
     #navigationSecondaryTestingPage {
         display: none;
+    }
+    #cardRow {
+        margin: auto;
+    }
+    #cardRow .card {
+        margin: 5px auto;
     }
 }
 
