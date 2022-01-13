@@ -174,18 +174,16 @@ a:hover.active {
 
 /* Sidebar */
 .navigationSecondary {
-    display: inline-block;
-    height: auto;
+    height: 575px;
     width: 300px;
-    position: absolute;
-    top: 850px;
-    left: 20%;
+    margin-left: auto !important;
+    margin-right: 0 !important;
     background-color: #003b6d;
     color: #fff;
     border-radius: 15px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-    padding: 20px !important;
-    overflow: auto;
+    padding: 10px;
+    margin-top: 150px;
 }
 
 .navigationSecondary a,
@@ -662,17 +660,10 @@ ul.social-footer2 li a {
 }
 
 @media (min-width: 1441px) and (max-width: 1650px) {
-    .navigationSecondary {
-        top: 810px;
-        left: 50px;
-    }
+    
 }
 
 @media (min-width: 1651px) and (max-width: 1920) {
-    .navigationSecondary {
-        top: 810px;
-        left: 12%;
-    }
     .flexCards {
         display: flex;
         align-items: flex-end !important;
