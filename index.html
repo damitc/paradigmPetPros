@@ -251,7 +251,7 @@
                         <div class="row">
                             <div class="col-xl-1"></div>
                             <div class="col-xl-9 col-sm-12">
-                                <form class="formMain row" onsubmit="openModal();return false" id="pexpertForm">
+                                <form class="formMain row" id="pexpertForm">
                                     <div class="mb-3 col-md-12" id="humanSection">
                                         <h3 class="widget-title darkBlue">Person Info<span></span></h3>
                                     </div>
@@ -300,26 +300,8 @@
                                             <option value="largeAnimal">Other Large Animal</option>
                                         </select>
                                     </div>
-                                    <button type="submit" class="btn pexpertCardButton" data-bs-toggle="modal" data-bs-target="#modalSubmitSuccess">Submit</button>
+                                    <button type="submit" class="btn pexpertCardButton">Submit</button>
                                 </form>
-                                <div class="modal fade" id="modalSubmitSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title">Thank You!</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>Our Pexperts will contact you in the next 48 hours</p>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="col-xl-2"></div>
                         </div>
@@ -328,9 +310,73 @@
             </div>
             <div class="col-xxl-1"></div>
         </div>            
-    </main> 
+    </main>
+     
 
     <footer id="footer" class="footer-1">
+        <div class="modal fade" id="pexpertFormModal" tabindex="-1" aria-labelledby="pexpertFormModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="formMain row" id="pexpertForm">
+                            <div class="mb-3 col-md-12" id="humanSection">
+                                <h3 class="widget-title darkBlue">Person Info<span></span></h3>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="name">Your Name</label>
+                                <input type="text" name="name" id="name" class="form-control" required>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" name="phone" id="phone" class="form-control" required>
+                            </div>
+                            <div class="mb-3 col-md-8">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="example@email.com" name="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3 col-md-4">
+                                <label for="zip">Zip Code</label>
+                                <input type="number" placeholder="90210" name="zip" id="zip" class="form-control" required>
+                            </div>
+                            <div class="mb-12 mt-4">
+                                <h3 class="widget-title darkBlue">Pet Info<span></span></h3>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="petName">Pet's Name</label>
+                                <input type="text" name="petName" id="petName" class="form-control" required>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="petAge">Pet's Age</label>
+                                <input type="number" name="petAge" id="petAge" class="form-control" required>
+                            </div>
+                            <div class="mb-3 col-md-12 mt-4">
+                                <h3 class="widget-title darkBlue">What Kind of Animal Is Your Pet?<span></span></h3>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="petType">Pet Type</label>
+                                <select name="petType" id="petType" class="form-control" required>
+                                    <option value="" disabled selected>Click to select your option</option>
+                                    <option value="cat">Cat</option>
+                                    <option value="dog">Dog</option>
+                                    <option value="bird">Bird</option>
+                                    <option value="freshwaterFish">Freshwater Fish</option>
+                                    <option value="saltwaterFish">Saltwater Fish</option>
+                                    <option value="reptile">Reptile</option>
+                                    <option value="amphibian">Amphibian</option>
+                                    <option value="smallAnimal">Other Small Animal</option>
+                                    <option value="largeAnimal">Other Large Animal</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn pexpertCardButton">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="main-footer widgets-dark typo-light">
             <div class="container">
                 <div class="row">
@@ -355,7 +401,7 @@
                         <div class="widget no-box">
                             <h5 class="widget-title">Get Started<span></span></h5>
                             <p>Connect with our Pexperts!</p>
-                            <a class="btn footerButton" href="#" target="_blank">Connect Now</a>
+                            <button class="btn footerButton" data-bs-toggle="modal" data-bs-target="#pexpertFormModal">Connect Now</button>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3">

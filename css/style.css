@@ -248,14 +248,14 @@ a:hover.active {
 /* ---------- Body Section ---------- */
 /* General Body */
 .paragraphHeadingGutter {
-    margin-top: 1.5rem !important;
+    margin-top: .5rem !important;
     margin-bottom: 1rem !important;
     display: inline-block !important;
 }
 
 /* About Section */
 #aboutSection {
-    margin-top: 5rem;
+    margin-top: 2.5rem;
 }
 
 .row #aboutImage {
