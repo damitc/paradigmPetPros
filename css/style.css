@@ -258,13 +258,10 @@ a:hover.active {
     margin-top: 2.5rem;
 }
 
-.row #aboutImage {
-    display: flex;
-    align-items: flex-start !important;
-}
-
 #aboutImage {
     max-width: 275px;
+    transform: rotate(90deg);
+    border-radius: 10px;
 }
 
 /* Pexpert Section */
@@ -500,7 +497,8 @@ ul.social-footer2 li {
 }
 
 ul.social-footer2 li a:hover {
-    background-color: #fff;
+    background-color: #4b92dc;
+    border-radius: 5px;
 }
 
 ul.social-footer2 li a {
