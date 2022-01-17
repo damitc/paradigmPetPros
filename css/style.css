@@ -345,12 +345,14 @@ a:hover.active {
 /* Cat Page */
 /* Carousel */
 .customCarousel {
-    height: 750px;
-    width: 750px;
+    max-height: 750px;
+    max-width: 950px;
+    /* margin: -100px 0; */
+    border-radius: 15px;
 }
 
-#imageCarousel {
-    margin-top: -150px !important;
+.carousel-item img {
+    border-radius: 15px;
 }
 
 /* ---------- Footer Section ---------- */
