@@ -377,6 +377,10 @@ footer .main-footer {
     font-weight: 500;
 }
 
+#footerEmailButton {
+    height: fit-content !important;
+}
+
 footer ul {
     padding-left: 0;
     list-style: none;
