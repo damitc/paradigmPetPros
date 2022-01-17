@@ -1,0 +1,22 @@
+To Do
+
+All pages:
+	1. need to make footer logo link to home page
+
+	2. style main page title differently than other headings
+
+	3. find 5 carousel pictures; edit to meet dimensions
+
+
+Cat page: 
+	1. find 4 cat pictures, one for each age group; edit to fit
+
+Dog page:
+	1. at least 1 picture to match each heading
+
+Fish page: 
+	1. at least 1 picture to match each heading
+
+	2. add href to link at bottom of page
+
+	3. style link at bottom of page
