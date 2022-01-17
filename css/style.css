@@ -54,6 +54,12 @@ section {
     margin: 6px auto;
 }
 
+.carouselHeader,.carouselHeader img {
+    max-height: 567.49px;
+    max-width: 1296px !important;
+    border-radius: 15px;
+}
+
 /* Contact Button */
 .contactButton {
     background-color: #003b6d !important;
