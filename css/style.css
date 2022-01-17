@@ -348,6 +348,11 @@ footer .main-footer {
     background: #003b6d;
 }
 
+#footerModalTitle {
+    color: red;
+    font-weight: 500;
+}
+
 footer ul {
     padding-left: 0;
     list-style: none;
