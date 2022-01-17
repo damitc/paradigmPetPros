@@ -353,6 +353,11 @@ footer .main-footer {
     font-weight: 500;
 }
 
+#headerModalTitle {
+    color: red;
+    font-weight: 500;
+}
+
 footer ul {
     padding-left: 0;
     list-style: none;
