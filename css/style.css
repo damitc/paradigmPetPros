@@ -6,6 +6,7 @@ body {
 
 p {
     line-height: 2;
+    max-width: 950px;
 }
 
 section {
@@ -258,6 +259,11 @@ a:hover.active {
     margin-top: 2.5rem;
 }
 
+.aboutText {
+    height: fit-content !important;
+    overflow: auto;
+}
+
 #aboutImage {
     max-width: 275px;
     transform: rotate(90deg);
@@ -319,6 +325,10 @@ a:hover.active {
     font-weight: 700;
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+
+#pexpertForm {
+    max-width: 950px;
 }
 
 .formMain input, .formMain select {
@@ -549,12 +559,17 @@ ul.social-footer2 li a {
     }
     .hrCardLine {
         display: block !important;
+        margin-top: 25px !important;
+        margin-bottom: 25px !important;
     }
     .row  .row {
         margin: 0px !important;
     }
     .headerTop {
         height: fit-content;
+    }
+    #aboutImage {
+        margin-top: 25px;
     }
 }
 
@@ -579,12 +594,17 @@ ul.social-footer2 li a {
     }
     .hrCardLine {
         display: block !important;
+        margin-top: 25px !important;
+        margin-bottom: 25px !important;
     }
     .row  .row {
         margin: 0px !important;
     }
     .headerTop {
         height: fit-content;
+    }
+    #aboutImage {
+        margin-top: 25px;
     }
 }
 
@@ -606,12 +626,17 @@ ul.social-footer2 li a {
     }
     .hrCardLine {
         display: block !important;
+        margin-top: 25px !important;
+        margin-bottom: 25px !important;
     }
     .row  .row {
         margin: 0px !important;
     }
     .headerTop {
         height: fit-content;
+    }
+    #aboutImage {
+        margin-top: 25px;
     }
 }
 
