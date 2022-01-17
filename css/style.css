@@ -342,6 +342,17 @@ a:hover.active {
     border: 2px solid #003b6d;
 }
 
+/* Cat Page */
+/* Carousel */
+.customCarousel {
+    height: 750px;
+    width: 750px;
+}
+
+#imageCarousel {
+    margin-top: -150px !important;
+}
+
 /* ---------- Footer Section ---------- */
 footer .main-footer {
     padding: 20px 0;
