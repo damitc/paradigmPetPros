@@ -271,8 +271,8 @@ a:hover.active {
 }
 
 #aboutImage {
-    max-width: 275px;
-    transform: rotate(90deg);
+    /* max-width: 275px; */
+    /* transform: rotate(90deg); */
     border-radius: 10px;
 }
 
@@ -366,8 +366,23 @@ a:hover.active {
 .fishImages img {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    height: 375px;
+    max-height: 375px;
     width: 300px;
+    /* margin: 10px; */
+}
+
+#aquaticWikiCardHeader {
+    background-color: #4b92dc;
+    color: #fff;
+}
+
+#aquaticWikiCard {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#cardItemShadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 100%;
 }
 
 /* ---------- Footer Section ---------- */
@@ -583,12 +598,12 @@ ul.social-footer2 li a {
 
 /* ---------- Media Queries ---------- */
 @media (max-width: 500px) {
-    .navigationSecondary {
+    /* .navigationSecondary {
         display: none;
     }
     #navigationSecondaryTestingPage {
         display: none;
-    }
+    } */
     #cardRow {
         margin: auto;
     }
@@ -619,12 +634,12 @@ ul.social-footer2 li a {
     .headerTop {
         height: fit-content;
     }
-    .navigationSecondary {
+    /* .navigationSecondary {
         display: none;
     }
     #navigationSecondaryTestingPage {
         display: none;
-    }
+    } */
     #cardRow {
         margin: auto;
     }
@@ -648,12 +663,12 @@ ul.social-footer2 li a {
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-    .navigationSecondary {
+    /* .navigationSecondary {
         display: none;
     }
     #navigationSecondaryTestingPage {
         display: none;
-    }
+    } */
     #cardRow {
         margin: auto;
     }
@@ -681,17 +696,23 @@ ul.social-footer2 li a {
         display: flex;
         align-items: flex-end;
     }
-    .navigationSecondary {
+    /* .navigationSecondary {
         display: none;
     }
     #navigationSecondaryTestingPage {
         display: none;
-    }
+    } */
     #cardRow {
         margin: auto;
     }
     #cardRow .card {
         margin: 5px auto;
+    }
+}
+
+@media (max-width: 1399px) {
+    .navigationSecondary {
+        display: none;
     }
 }
 
